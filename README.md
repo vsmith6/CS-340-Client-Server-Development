@@ -33,3 +33,38 @@ dog for a specific purpose. The dashboard interface helps to abstract the variou
 the data cannot be corrupted or altered in the database by user error. This is valuable to the company as it saves them a lot
 of time, effort, and cost, providing their needed answers quickly.
 ```
+-----------------------------------------------------Project Overview---------------------------------------------------------------------------------------------
+     The dashboard was created with a Python module that contains the database connection functionality as well as the implementation of the CRUD functions.  Python was chosen as the language that will author the script to provide the “glue” to bridge the dashboard to the database.  PyMongo was chosen to access the MongoClient, which imports the Python module to allow the Dashboard to interact with the data in the database.  The Dash components were chosen to provide the visuals requested by the user and allow interaction between the user and the data.  The combination reflects the Model-View-Controller aspect of Object-Oriented Programming. 
+     In the project, the MVC controller action uses the models to retrieve the necessary information from the database. Once the database returns the data, it is loaded into the dashboard, which is referred to as a view. The user can then see the requested data in the view. 
+```     
+-----------------------Getting Started------------------------------------------------------------------------------
+```
+     **Note: ensure the mongo server is running**
+![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/gettingstarted1.png "Getting Started title")
+
+![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/gettingstarted2.png "Getting Started title")          
+```
+-----------------------Script Usage-------------------------------------------------------------------------------
+```
+     The module imports MongoClient and creates the AnimalShelter object class.  The module allows the user to sign into the database by entering their username and  password from the driver script. The database shown is the AAC existing database and the animals collection, which can be updated to reflect the needs of the user. The module imports bson to save the created objects to the database in json format. The create function will use this database collection to insert a dictionary of data. It accepts the connection as a self parameter and the data. If the data does not insert, it will return false. If successful, it returns true. The read function uses the find command to search by a valid value of the data. If the search is successful, it returns the _id of the object. If it is not successful, it returns as false.
+     The update function takes the self parameter as well as the parameters of the old data and the new data, which represent what the user wants to update the data for that object to be. If the data to update is not found, the method will not execute. If the data is successfully found, the data will be updated to what is passed in as the new data. The delete function takes the parameters of self and data, which is the data that is meant to be deleted.  If the data meant to be deleted is not found, the function will not execute and will raise an exception, printing the message “Nothing to delete, data is empty”. If the data is deleted, the function will return true and print the “Successfully Deleted” message. 
+```
+-----------------------Dashboard Features-------------------------------------------------------------------------
+```
+     The features of the dashboard include a data table, a location map, and a pie chart that will populate with the data that is chosen by the user using the radio button choices named and selected by the client. The data table also features pagination to provide a cleaner appearance for the client, limiting the rows to 10 at a time. The location map will show an icon for each dog in the visible rows and provide a tooltip with the dog’s name and breed, depending on the selection of the user.
+     The client specified the ability to show the animals in his database that are Water Rescue Breeds, which include Labrador Retriever Mix, Chesapeake Bay Retriever, and Newfoundland breeds.  The preferences are Intact Females that are 26 to 156 weeks in training age. This functionality is represented by the following screenshot:
+
+![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/Screenshot_2022-08-13%20Dash(1).png "Getting Started title") 
+
+     The client specified the ability to show the animals in his database that are Mountain or Wilderness Rescue, which include German Shepherd, Alaskan Malamute, Old English Sheepdog, Siberian Husky, and Rottweiler breeds.  The preferences are Intact Males that are 26 to 156 weeks in training age. This functionality is represented by the following screenshot:
+ ![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/Screenshot_2022-08-13%20Dash(2).png "Getting Started title")
+ 
+ The client specified the ability to show the animals in his database that are Disaster or Individual Tracking, which include Doberman Pinscher, German Shepherd, Golden Retriever, Bloodhound, and Rottweiler breeds.  The preferences are Intact Males that are 20 to 300 weeks in training age. This functionality is represented by the following screenshot:
+  ![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/Screenshot_2022-08-13%20Dash(3).png "Gettinh Started title")
+ The client requested the ability to reset the dashboard to the original unfiltered state.  The Reset selection will show the data in the format requested.  The following screenshot demonstrates this functionality:
+ ![Getting started data](https://github.com/vsmith6/CS-340-Client-Server-Development/blob/main/images/Screenshot_2022-08-13%20Dash(4).png "Getting Started title")
+     
+
+```
+
+```
