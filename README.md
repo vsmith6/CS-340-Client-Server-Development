@@ -4,6 +4,7 @@ Coursework for the CS-340 Client Server Development course
 How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One,
 which you used to connect the dashboard widgets to the database in Project Two. What were the advantages of working in this way? How else could
 you use this CRUD Python module in the future?
+
 In order to keep the program for the Project Two project maintainable, readable, and adaptable, it was important to realize the structure
 of the data and how to create the various database access commands as well as the CRUD functionality.  It was cleaner to ensure that the
 driver functioned as was expected by thoroughly testing the functions with test data to ensure that they were returning what was expected
@@ -13,6 +14,7 @@ module in the future, however, the Dash dashboard would probably not be somethin
 How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso
 Salvare requested. How did your approach to this project differ from previous assignments in other courses? What techniques or strategies
 would you use in the future to create databases to meet other client requests?
+
 Approaching the requested requirements for this assignment was based on an introductory view of Mongo and Mongo Client, as well as an 
 introductory view to the Dash components used to build the dashboard. The difference in this course versus previous courses is that we
 got to create and test the Python driver to ensure that it was connecting to the database properly as well as returning the results 
@@ -24,6 +26,7 @@ accurate and sanitized.
 
 What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare,
 to do their work better?
+
 Computer scientists help their clients by recommending strategies and tools to enable them to utilize the data that they have.  
 A client may not be able to understand how to visualize their data. A computer scientist can work with the client to recommend 
 the best technology solution to suit their project goals in a more timely manner than the client trying to do it on their own. 
