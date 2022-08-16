@@ -33,7 +33,8 @@ dog for a specific purpose. The dashboard interface helps to abstract the variou
 the data cannot be corrupted or altered in the database by user error. This is valuable to the company as it saves them a lot
 of time, effort, and cost, providing their needed answers quickly.
 
-------------------------Project Overview---------------------------------------------------------------------------------------------
+------------------------Project Overview----------------------------------------------------------------------------
+
      The dashboard was created with a Python module that contains the database connection functionality as well as the implementation of the CRUD functions.  Python was chosen as the language that will author the script to provide the “glue” to bridge the dashboard to the database.  PyMongo was chosen to access the MongoClient, which imports the Python module to allow the Dashboard to interact with the data in the database.  The Dash components were chosen to provide the visuals requested by the user and allow interaction between the user and the data.  The combination reflects the Model-View-Controller aspect of Object-Oriented Programming. 
      In the project, the MVC controller action uses the models to retrieve the necessary information from the database. Once the database returns the data, it is loaded into the dashboard, which is referred to as a view. The user can then see the requested data in the view. 
 
